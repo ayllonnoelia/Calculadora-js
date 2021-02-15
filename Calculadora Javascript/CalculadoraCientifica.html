@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora Científica Javascript</title>
+    <meta charset="UTF-8">
+    <link rel=" stylesheet " href="estilos/estiloscient.css">
+</head>
+<body>
+    <div class = " container ">
+        <button id="resultado"></button>       
+       
+        <div class = " teclas "><!--Pongo este div para que los dos 
+                                    últimos button queden situados
+                                    en el medio.-->
+
+                <div>
+                    <button id ="pi" onclick="pi()">π</button> 
+                    <button id ="raiz" onclick="raiz()">√</button>
+                    <button id ="raizcub" onclick="raizcub()">3√</button>
+                    <button id ="aleat" onclick="aleat()">rand(0/1)</button>
+                    <button id ="num1">1</button>
+                    <button id ="num2">2</button>
+                    <button id ="num3">3</button>
+                    <button id ="sum">+</button>
+                </div>
+
+                <div> 
+                    <button id ="sin" onclick="sin()">sin</button>
+                    <button id ="cos" onclick="cos()">cos</button>
+                    <button id ="tan" onclick="tan()">tan</button>
+                    <button id ="arcsin" onclick="arcsin()">sen-1</button>
+                    <button id ="num4">4</button>
+                    <button id ="num5">5</button>
+                    <button id ="num6">6</button>
+                    <button id ="res">-</button>
+                </div> 
+
+                <div>
+                    <button id ="arcocos" onclick="arcocos()">cos-1</button>
+                    <button id ="arcotan" onclick="arcotan()">tan-1</button>
+                    <button id ="senh" onclick="senh()">sinh</button>
+                    <button id ="cosh" onclick="cosh()">cosh</button>
+                    <button id ="num7">7</button>
+                    <button id ="num8">8</button>
+                    <button id ="num9">9</button>
+                    <button id ="mult">*</button>
+                </div> 
+
+                <div> 
+                    <button id ="tanh" onclick="tanh()">tanh</button>
+                    <button id ="senhm" onclick="senhm()">sinh-1</button>
+                    <button id ="coshm" onclick="coshm()">cosh-1</button>
+                    <button id ="tanhm" onclick="tanhm()">tanh-1</button>
+                    <button id ="coma">.</button>
+                    <button id ="num0">0</button>
+                    <button id ="ig" class='ig'>=</button> 
+                    <button id ="div">/</button>
+                </div> 
+
+                <div>
+                    <button id ="log" onclick="log()">log</button>
+                    <button id ="log2" onclick="logdos()">log2</button>
+                    <button id ="round" onclick="round()">round</button>
+                    <button id ="trunc" onclick="trunc()">trunc</button>
+                    <button id ="sumarm">M+</button> 
+                    <button id ="restarm">M-</button>
+                    <button id ="almacenarm">MR</button>
+                    <button id ="cache" onclick="limpiar()">C</button>                 
+                </div>
+
+            <div>
+                <button id ="limpiarc" onclick="limpiarc()">Limpiar Consola</button>
+                <button id ="cientif" onClick=location="Calculadora.html" target="_blank">Calculadora Básica</button>
+            </div>
+
+      </div>
+
+    </div>
+    
+    <!--ENLACE AL SCRIPT JS-->
+
+    <script src="calculadoracientifica.js"></script>
+    
+</body>
+</html>

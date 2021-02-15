@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora Javascript</title>
+    <meta charset="UTF-8">
+    <link rel=" stylesheet " href="estilos/estilos.css">
+</head>
+<body>
+    <!--Creo un container que contenga todos los button y div necesarios-->
+    <div class = " container ">
+
+            <!--He puesto button porque 
+                si le pongo div como tenía pensado
+                no me salen los datos impresos por "pantalla"
+                la cual sería la sección del div/button.
+                Con darle estilos al button es más que suficiente.-->
+
+        <button id="resultado"></button>
+        
+        <!--HACEMOS UN DIV GLOBAL PARA PONERLE LOS ESTILOS A LAS TECLAS-->
+        <div class = " teclas ">
+
+            <!--A continuación pongo los div y button correspondientes
+                y le doy las propiedades y/o eventos
+                que considero.-->
+
+                <div>
+                    <button id ="num1">1</button>
+                    <button id ="num2">2</button>
+                    <button id ="num3">3</button>
+                    <button id ="sum">+</button>
+                </div>
+
+                <div> 
+                    <button id ="num4">4</button>
+                    <button id ="num5">5</button>
+                    <button id ="num6">6</button>
+                    <button id ="res">-</button>
+                </div> 
+
+                <div>
+                    <button id ="num7">7</button>
+                    <button id ="num8">8</button>
+                    <button id ="num9">9</button>
+                    <button id ="mult">*</button>
+                </div> 
+
+                <div> 
+                    <button id ="coma">.</button>
+                    <button id ="num0">0</button>
+                    <button id ="ig" class='ig'>=</button> 
+                    <button id ="div">/</button>
+                </div> 
+
+                <div>
+                    <button id ="sumarm"> M+ </button> 
+                    <button id ="restarm"> M- </button>
+                    <button id ="almacenarm"> MR </button>
+                    <button id ="cache" onclick="limpiar()"> C </button>
+                    <button id ="limpiarc" onclick="limpiarc()">Limpiar Consola</button>
+                    <button id ="cientif" onClick=location="CalculadoraCientifica.html" target="_blank" onclick="mensaje()"> Calculadora Científica </button>
+                </div>
+      
+
+
+
+      </div>
+
+    </div>
+    
+    <!--ENLACE AL SCRIPT JS-->
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
